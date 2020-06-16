@@ -13,7 +13,7 @@ public class UserController {
 	public String userform() {
 		return "userform";
 	}
-	@RequestMapping(path="regist",method=RequestMethod.POST)
+	@RequestMapping(path="/regist",method=RequestMethod.POST)
 	public String regist(@ModelAttribute User user) {
 		System.out.println("사용자가 입력한 user정보입니다. 해당 정보 이용 코드 와야해");
 		System.out.println(user);
